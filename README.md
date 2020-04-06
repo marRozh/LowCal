@@ -23,8 +23,8 @@ LowCal Recipes is a website to keep track of your own low calorie recipes and cr
 (https://github.com/marRozh)
 
 ## About the project
-
-Create your account to which you can search and add already existing recipes, add your recipes and create a daily meal plan. 
+CS50 Final Project in Web Development path.
+Using python and flask, website that works as a Low Calorie recipe hub, where a user can register to get own access and search and add recipes to their profile.
 
 #### Project architecture
 ```
