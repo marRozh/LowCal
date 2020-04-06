@@ -16,6 +16,7 @@ LowCal Recipes is a website to keep track of your own low calorie recipes and cr
 * [Python](https://docs.python.org/3/) 
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) 
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/) 
+* [Flask](https://www.sqlite.org/lang.html) 
 
 
 ## Authors
