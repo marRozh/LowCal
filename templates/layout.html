@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html id="back" lang="en">
+    <head>
+        <title>LowCal Recipes / {% block title %}{% endblock %}</title>
+        <link href="../static/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="../static/style.css" type="text/css">
+        <link href="../static/broccoli.ico" rel="icon">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        
+        <!--Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!--Bootstrap JS-->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    </head>
+    <body id="bg">
+        <nav class="navbar navbar-expand-xl navbar-light bg-light sticky-top">
+            <a class="navbar-brand" href="/">LowCal Recipes</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        {% if session.user_id %}
+                        <li class="nav-item">
+                            <img class="nav-link" src="../static/home.png" width="40" height="40" alt="home">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <img class="nav-link" src="../static/recipe.png" width="40" height="40" alt="recipes">
+                            <a class="nav-link" href="/recipes">Recipes</a>
+                        </li>
+                        <li class="nav-item">
+                            <img class="nav-link" src="../static/meals.png" width="40" height="40" alt="snacks">
+                            <a class="nav-link" href="/meals">Meal Planner</a>
+                        </li>
+                        <li class="nav-item">
+                            <img class="nav-link" src="../static/plus.png" width="40" height="40" alt="meals">
+                            <a class="nav-link" href="/addrecipe">Add A Recipe</a>
+                        </li>
+                        <li class="nav-item">
+                            <img class="nav-link" src="../static/account.png" width="40" height="40" alt="snacks">
+                            <a class="nav-link" href="/account">My Account</a>
+                        </li>
+                        <li class="nav-item last">
+                            <a class="nav-link" href="/logout">Log Out</a>
+                        </li>
+                        {% else %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="/register">Register</a>
+                        </li>
+                        <li class="nav-item last">
+                            <a class="nav-link" href="/login">Log In</a>
+                        </li>
+                        {% endif %}
+                    </ul>
+            </div>
+          </nav>
+        <main id="main" class="container">
+            {% block main %}{% endblock %}
+        </main>
+
+        <script src="../static/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Meal Planning
+{% endblock %}
+
+{% block main %}
+    <div id="meal-planning-heading">
+        <h1>Meal Planning</h1>
+    </div>
+
+    <div id="meal-planning-div">
+        <form id="meal-planning-form" action="/meals" method="post">
+            <button id="meal-planning-button" type="submit" class="btn btn-primary">Generate Random Daily Meal Plan</button>
+        </form>
+    </div>
+
+    <div id="meal-planning-div-img">
+        <img id="meal-planning-img" src="../static/undraw_Chef_cu0r.svg">
+    </div>
+
+
+{% endblock %}

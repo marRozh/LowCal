@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <h1 id="index-heading">Welcome to LowCal Recipes!</h1>
+
+    <img id="index-img" src="../static/undraw_celebration_0jvk.svg">
+
+    <p id="index-text">You can use this website to browse low calorie recipes, add your own, and create daily Meal Plans!</p>
+
+    <div id="index-links" class="card-group">
+        <div id="firstcard" class="card">
+          <a href="/recipes" class="stretched-link"> <img src="../static/undraw_web_search_eetr.svg" class="card-img-top" alt="search"> </a>
+          <div class="card-body">
+            <h6 class="card-title">Browse Recipes</h5>
+            <p class="card-text">Browse low calory recipes and add to your collection</p>
+          </div>
+        </div>
+        <div id="secondcard" class="card">
+            <a href="/addrecipe" class="stretched-link"> <img src="../static/undraw_add_content_d1tf.svg" class="card-img-top" alt="add"> </a>
+          <div class="card-body">
+            <h6 class="card-title">Add Recipes</h5>
+            <p class="card-text">Add your own recipes to the collection</p>
+          </div>
+        </div>
+        <div id="thirdcard" class="card">
+            <a href="/meals" class="stretched-link"> <img src="../static/undraw_master_plan_95wa.svg" class="card-img-top" alt="plan"> </a>
+          <div class="card-body">
+            <h6 class="card-title">Plan Meals</h5>
+            <p class="card-text">Make a day meal plan</p>
+          </div>
+        </div>
+      </div>
+{% endblock %}

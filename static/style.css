@@ -1,0 +1,1229 @@
+/* Colours */
+/* pink: #FA8BFF
+green: #2BFF88
+blue: ##2BD2FF
+*/
+
+*, body, html
+{
+    font-family: 'Gotu', sans-serif;
+}
+
+#back, #bg, #main
+{
+    background-color: rgb(244, 245, 248);
+}
+
+html
+{
+    margin: 0;
+}
+
+html, main
+{
+    height: 100%;
+}
+
+#main
+{
+    padding: 10px;
+    margin-top: auto!important;
+}
+
+
+/* NavBar */
+a.navbar-brand
+{
+    font-family: 'Liu Jian Mao Cao', cursive;
+    font-size: 2rem;
+    color: rgb(43, 227, 210)!important;
+    padding-bottom: 1rem;
+}
+
+.navbar-light .navbar-brand
+{
+    color: rgb(43, 227, 210)!important
+}
+
+nav.navbar.navbar-expand-xl.navbar-light.bg-light
+{
+    background-color: rgb(244, 245, 248)!important;
+}
+.bg-light
+{
+    background-color: rgb(244, 245, 248)!important;
+}
+
+.btn-outline-success
+{
+    color: rgb(43, 227, 210)!important;
+    border-color: rgb(43, 227, 210)!important;
+}
+.btn-outline-success:hover
+{
+    background-color: rgb(43, 227, 210)!important;
+    color: rgb(241, 243, 247)!important;
+}
+.btn-outline-success.focus, .btn-outline-success:focus
+{
+    box-shadow: 0 0 0 0.2rem rgba(44,227,210,.5)!important;
+}
+.btn-outline-success:not(:disabled):not(.disabled).active, .btn-outline-success:not(:disabled):not(.disabled):active, .show>.btn-outline-success.dropdown-toggle
+{
+    color: rgb(241, 243, 247)!important;
+    background-color: rgb(43, 227, 210)!important;
+    border-color: rgb(43, 227, 210)!important;
+}
+
+.nav-item
+{
+    display: flex;
+}
+
+@media only screen and (min-width: 1600px) {
+    .nav-item
+    {
+        margin-right: 8rem!important;
+    }   
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1600px) {
+    .nav-item
+    {
+        margin-right: 4rem!important;
+    }   
+}
+
+a.nav-link
+{
+    padding-right: 0!important;
+    padding-left: 0!important;
+}
+
+ul.navbar-nav.mr-auto
+{
+    text-align: center;
+
+}
+
+.form-control:focus
+{
+    border: none;
+    border-radius: 3px;
+    background: #f4f5f8!important;
+    box-shadow: inset 5px 5px 8px #eaebee, 
+            inset -5px -5px 8px #feffff;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1198px) {
+    img.nav-link
+    {
+        width: 25px!important;
+        height: 30px!important;
+        padding-top: 8px!important;
+        padding-bottom: 0px!important;
+        margin-right: 10px!important;
+    }
+}
+
+.last
+{
+    margin-right: 2rem!important;
+}
+
+/* Log In */
+#id-jumbotron
+{
+    background-color: rgb(244, 245, 248);
+}
+
+#login, #register
+{
+    width: 20rem;
+    height: 20rem;
+    /*box-shadow: 9px 9px 16px rgba(163,177,198,0.5), -9px -9px 16px rgba(255,255,255,1);*/
+    border-radius: 19px;
+    background: #f4f5f8;
+    box-shadow:  5px 5px 10px #cbcbce, -5px -5px 10px #ffffff;
+}
+
+#login input, #register input
+{
+    border: none;
+    border-radius: 5px;
+    background: #f4f5f8;
+    box-shadow: inset 5px 5px 6px #d7d8da, 
+                inset -5px -5px 6px #ffffff;
+}
+
+#login h1
+{
+    padding-bottom: 2rem;
+}
+
+#register h1
+{
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+#register
+{
+    height: 23rem;
+}
+
+#login div.align-items-center
+{
+    margin: auto;
+    width: 15rem;
+    padding-top: 3rem;
+}
+
+#register div.align-items-center
+{
+    margin: auto;
+    width: 15rem;
+}
+
+#login-button
+{
+    display: block;
+    margin: auto;
+    border: none;
+    border-radius: 3px;
+    background: #f4f5f8;
+    box-shadow:  5px 5px 8px #eaebee, 
+             -5px -5px 8px #feffff;
+    color: #2BD2FF;
+    text-align: center;
+}
+
+#login-button:active
+{
+    display: block;
+    margin: auto;
+    border: none;
+    border-radius: 3px;
+    background: #f4f5f8;
+    box-shadow: inset 5px 5px 8px #eaebee, 
+             -5px -5px 8px #feffff;
+    color: #2BD2FF;
+    text-align: center;
+}
+
+#register-jumbotron
+{
+    background-color: rgb(244, 245, 248);
+}
+
+/* Error page */
+#apology-jumbotron
+{
+    background-color: rgb(244, 245, 248);
+}
+
+#login img
+{
+    height: 120px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+}
+
+#oops
+{
+    padding-bottom: 5px!important;
+}
+
+#error-number, #error-message
+{
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+/* index.html */
+h1
+{
+    font-family: 'Gotu', sans-serif;
+    color: #2BD2FF;
+    text-align: center;
+}
+
+#recipes-drop-down
+{
+    margin-bottom: 1rem;
+}
+
+.index-button
+{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#index-button
+{
+    border: none;
+    margin: auto;
+    display: block;
+    border-radius: 3px;
+    background: #f4f5f8;
+    box-shadow:  5px 5px 8px #eaebee, 
+             -5px -5px 8px #feffff;
+}
+
+#index-button:active
+{
+    border: none;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    background: #f4f5f8;
+    box-shadow: inset 5px 5px 5px #c6c6c9, 
+                inset -5px -5px 5px #ffffff;
+}
+
+#select-meal
+{
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 5px;
+    background: #f4f5f8;
+    box-shadow: inset 5px 5px 6px #d7d8da, 
+                inset -5px -5px 6px #ffffff;
+}
+
+
+/* Index */
+#index-heading-your-rec
+{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2BFF88;
+
+}
+
+#index-recipes-jumbotron
+{
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: rgb(244, 245, 248);
+}
+
+#index-heading
+{
+    margin-bottom: 1rem;
+
+}
+
+#index-img
+{
+    height: 20rem;
+    margin: auto;
+    display: block;
+}
+
+#full-index-img
+{
+    height: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    display: block;
+}
+
+#index-text
+{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#full-index-links
+{
+    margin-bottom: 2rem;
+}
+
+#index-links img
+{
+    height: 8rem;
+}
+
+#full-index-links img
+{
+    height: 8rem;
+}
+
+#firstcard, #secondcard, #thirdcard
+{
+    width: 4rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    padding-top: 1.5rem;
+    border: none;
+    border-radius: 19px;
+    background: #f4f5f8;
+    box-shadow:  5px 5px 10px #cbcbce, -5px -5px 10px #ffffff;
+}
+
+#full-firstcard, #full-secondcard, #full-thirdcard
+{
+    width: 2rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    padding-top: 1.5rem;
+    border: none;
+    border-radius: 19px;
+    background: #f4f5f8;
+    box-shadow:  5px 5px 10px #cbcbce, -5px -5px 10px #ffffff;
+}
+
+#index-links p
+{
+    font-size: 13px;
+    text-align: center;
+}
+
+
+#index-links h6
+{
+    font-size: 16px;
+    text-align: center;
+}
+
+#full-index-links h6
+{
+    font-size: 14px;
+    text-align: center;
+}
+
+/* My Account */
+#account-jumbotron
+{
+    background-color: rgb(244, 245, 248);
+    padding: 0;
+}
+
+#account-jumbotron h1
+{
+    display: block;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#account-img
+{
+    height: 400px;
+    position: absolute;
+    right: 150px;
+
+}
+
+@media only screen and (min-width: 1601px) {
+    #account-img
+    {
+        height: 400px;
+        position: absolute;
+        right: 100px;
+        margin-top: 2.5rem;
+    }
+    #my-account-email
+    {
+        margin-top: 0;
+        margin-bottom: 6rem;
+    }
+
+    #my-account-name
+    {
+        margin-bottom: 0;
+    }
+
+    #left-side
+    {
+        margin-left: 0;
+        margin-right: 1rem;
+        display: inline-block;
+        height: 24rem;
+        vertical-align: top;
+    }
+
+    #right-side
+    {
+        display: inline-block;
+        margin-left: 1rem;
+        height: 24rem;
+        vertical-align: top;
+    }
+
+    #my-account-password
+    {
+        width: 20rem;
+        height: 22rem;
+        padding: 1.5rem;
+        vertical-align: top;
+        border-radius: 19px;
+        background: #f4f5f8;
+        box-shadow:  5px 5px 10px #cbcbce, -5px -5px 10px #ffffff;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    #account-img
+    {
+        height: 350px;
+        position: absolute;
+        right: 60px;
+        margin-top: 5rem;
+    }
+    #my-account-email
+    {
+    margin-top: 0;
+    margin-bottom: 6rem;
+    }
+
+    #my-account-name
+    {
+    margin-bottom: 0;
+    }
+
+    #left-side
+    {
+    margin-left: 0;
+    margin-right: 1rem;
+    display: inline-block;
+    height: 24rem;
+    vertical-align: top;
+    }
+
+    #right-side
+    {
+    display: inline-block;
+    margin-left: 1rem;
+    height: 24rem;
+    vertical-align: top;
+    }
+
+    #my-account-password
+    {
+        width: 20rem;
+        height: 22rem;
+        padding: 1.5rem;
+        vertical-align: top;
+        border-radius: 19px;
+        background: #f4f5f8;
+        box-shadow:  5px 5px 10px #cbcbce, -5px -5px 10px #ffffff;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    #account-img
+    {
+        display: none;
+    }
+
+    .account-heading
+    {
+        margin-bottom: 3rem;
+    }
+
+    #my-account-email
+    {
+    margin-top: 0;
+    margin-bottom: 6rem;
+    }
+
+    #my-account-name
+    {
+    margin-bottom: 0;
+    }
+    #left-side
+    {
+    margin-left: 4rem;
+    margin-right: 1rem;
+    display: inline-block;
+    height: 24rem;
+    vertical-align: top;
+    }
+
+    #right-side
+    {
+    display: inline-block;
+    margin-left: 1rem;
+    margin-right: 4rem;
+    height: 24rem;
+    vertical-align: top;
+    }
+
+    #my-account-password
+    {
+        width: 20rem;
+        height: 22rem;
+        padding: 1.5rem;
+        vertical-align: top;
+        border-radius: 19px;
+        background: #f4f5f8;
+        box-shadow:  5px 5px 10px #cbcbce, -5px -5px 10px #ffffff;
+    }
+}
+
+@media only screen and (min-width: 770px) and (max-width: 992px) {
+    #account-img
+    {
+        display: none;
+    }
+
+    .account-heading, #my-account-email, #my-account-name
+    {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+    }
+
+    #left-side
+    {
+        margin: auto;
+        display: block;
+    }
+
+    #right-side
+    {
+        display: block;
+        margin: auto;
+    }
+
+    #my-account-password
+    {
+        margin: auto;
+        width: 18rem;
+        height: 22rem;
+        padding: 1.5rem;
+        border-radius: 19px;
+        background: #f4f5f8;
+        box-shadow:  5px 5px 10px #cbcbce, -5px -5px 10px #ffffff;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 770px) {
+    #account-img
+    {
+        display: none;
+    }
+
+    #account-jumbotron h1
+    {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .account-heading, #my-account-email, #my-account-name
+    {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+    }
+
+    #left-side
+    {
+        margin: auto;
+        display: block;
+    }
+
+    #right-side
+    {
+        display: block;
+        margin: auto;
+    }
+
+    #my-account-password
+    {
+        margin: auto;
+        width: 18rem;
+        height: 18rem;
+        padding: 0.5rem;
+        border-radius: 19px;
+        background: #f4f5f8;
+        box-shadow:  5px 5px 10px #cbcbce, -5px -5px 10px #ffffff;
+    }
+}
+
+#change-button
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 3px;
+    background: #f4f5f8;
+    box-shadow:  5px 5px 8px #eaebee, 
+             -5px -5px 8px #feffff;
+    color: #2BD2FF;
+    text-align: center;
+}
+
+#change-button:active
+{
+    display: block;
+    border: none;
+    border-radius: 3px;
+    background: #f4f5f8;
+    box-shadow: inset 5px 5px 8px #eaebee, 
+             -5px -5px 8px #feffff;
+    color: #2BD2FF;
+    text-align: center;
+}
+
+#my-account-email, #my-account-name
+{
+    width: 18rem;
+    height: 8rem;
+    padding: 1.5rem;
+    vertical-align: top;
+    border-radius: 19px;
+    background: #f4f5f8;
+    box-shadow:  5px 5px 10px #cbcbce, -5px -5px 10px #ffffff;
+}
+
+#my-account-password label
+{
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+    #my-account-password label, #my-account-password input
+    {
+    width: 11rem!important;
+    font-size: 13px;
+    }
+
+}
+
+#change-pass-form input
+{
+    border: none;
+    margin: auto;
+    width: 10rem;
+    border-radius: 5px;
+    background: #f4f5f8;
+    box-shadow: inset 5px 5px 6px #d7d8da, 
+                inset -5px -5px 6px #ffffff;
+}
+
+
+/* Recipes */
+
+#recipes-jumbotron
+{
+    padding: 2rem 0;
+    margin-bottom: 0;
+    background-color: rgb(244, 245, 248);
+}
+
+#search-title
+{
+    margin-bottom: 1rem;
+    color: #2BD2FF;
+}
+
+#recipes-card
+{
+    border: none;
+    border-radius: 0px;
+    background: #f4f5f8;
+    box-shadow:  5px 5px 10px #bcbdbf, 
+                 -5px -5px 10px #ffffff;
+    padding: 1.5rem;
+    display: inline-block;
+    width: 25rem;
+    height: 25rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    vertical-align: top;
+}
+
+#recipes-card-body
+{
+    padding: 0px;
+}
+
+#recipes-card-text, #calories, #servings, #prep
+{
+    font-size: 0.8rem;
+}
+
+#ingredients
+{
+    font-size: 0.9rem;
+}
+
+#calories, #servings, #prep
+{
+    text-align: center;
+    color: #2BE3D2;
+}
+
+#recipes-card-title
+{
+    font-family: 'Liu Jian Mao Cao', cursive;
+    color: #2BD2FF;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+#recipes-card-body p
+{
+    margin-bottom: 0.5rem;
+}
+
+@media only screen and (min-width: 526px) and (max-width: 1199px) {
+    #recipes-card
+    {
+        border: none;
+        border-radius: 0px;
+        background: #f4f5f8;
+        box-shadow:  5px 5px 10px #bcbdbf, 
+                     -5px -5px 10px #ffffff;
+        padding: 1.5rem;
+        display: block;
+        width: 25rem;
+        height: 25rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 2rem;
+        vertical-align: top;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 525px) {
+    #recipes-card
+    {
+        border: none;
+        border-radius: 0px;
+        background: #f4f5f8;
+        box-shadow:  5px 5px 10px #bcbdbf, 
+                     -5px -5px 10px #ffffff;
+        padding: 1.5rem;
+        display: block;
+        width: 25rem;
+        height: 25rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 2rem;
+        vertical-align: top;
+    }
+}
+
+
+#recipes-add
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    display: block;
+    border: none;
+    height: 35px;
+    width: 35px;
+    padding: 0px;
+    font-size: 25px;
+    color: #FA8BFF;
+    border-radius: 9px;
+    background: #f4f5f8;
+    box-shadow:  5px 5px 6px #c1c2c4, 
+                 -5px -5px 6px #ffffff;
+}
+
+
+#recipes-add:active
+{
+    border: none;
+    height: 35px;
+    width: 35px;
+    padding: 0px;
+    font-size: 25px;
+    color: #FA8BFF;
+    border-radius: 9px;
+    background: #f4f5f8;
+    box-shadow: inset 5px 5px 5px #e0e1e4, 
+                inset -5px -5px 5px #ffffff;
+}
+
+
+#recipe-search
+{
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 5px;
+    background: #f4f5f8;
+    box-shadow: inset 5px 5px 6px #d7d8da, 
+                inset -5px -5px 6px #ffffff;
+}
+
+#add-to-main
+{
+    border: none;
+    /*border-radius: 0px;
+    background: #f4f5f8;
+    box-shadow:  5px 5px 10px #bcbdbf, 
+                 -5px -5px 10px #ffffff;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+#add-card-body
+{
+    padding-bottom: 0px;
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: rgb(244, 245, 248);
+}
+
+#select-recipe
+{
+    border: none;
+    border-radius: 5px;
+    background: #f4f5f8;
+    box-shadow: inset 5px 5px 6px #d7d8da, 
+                inset -5px -5px 6px #ffffff;
+    background-color: rgb(244, 245, 248);
+}
+
+#added
+{
+    margin-top: -50px;
+    background-color: #2BFF88!important;
+    color: #fff;
+    /*width: 160%;
+    margin-left: -19rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;*/
+    text-align: center;
+    display: none;
+}
+
+#recipes-like
+{
+    border: none;
+    color: #FA8BFF;
+    font-weight: bold;
+    border-radius: 3px;
+    background: #f4f5f8;
+    box-shadow:  5px 5px 8px #eaebee, 
+             -5px -5px 8px #feffff;
+    margin-left: 45%;
+    display: block;
+}
+
+#like-recipe
+{
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+}
+
+#recipes-like:active
+{
+    margin-left: 45%;
+    display: block;
+    border: none;
+    color: #FA8BFF;
+    font-weight: bold;
+    border-radius: 3px;
+    background: #f4f5f8;
+    box-shadow: inset 5px 5px 5px #c6c6c9, 
+                inset -5px -5px 5px #ffffff;
+}
+
+
+
+
+/* Add Recipes */
+#add-jumbotron
+{
+    background-color: rgb(244, 245, 248);
+    padding: 15px;
+    margin-bottom: 0;
+}
+
+
+#recipeName, #add-calories, #add-servings, #add-prep, #add-text, #add-ingredients
+{
+    border: none;
+    border-radius: 5px;
+    background: #f4f5f8;
+    box-shadow: inset 5px 5px 6px #d7d8da, 
+                inset -5px -5px 6px #ffffff;
+}
+
+#add-recipe-button
+{
+    border: none;
+    margin: auto;
+    color: #FA8BFF;
+    font-weight: bold;
+    border-radius: 3px;
+    background: #f4f5f8;
+    box-shadow:  5px 5px 8px #eaebee, 
+             -5px -5px 8px #feffff;
+}
+
+#add-recipe-button:active
+{
+    border: none;
+    color: #FA8BFF;
+    font-weight: bold;
+    border-radius: 5px;
+    background: #f4f5f8;
+    box-shadow: inset 5px 5px 5px #c6c6c9, 
+                inset -5px -5px 5px #ffffff;
+}
+
+#add-recipe div.form-group.row
+{
+    margin-bottom: 0.5rem;
+}
+
+/* Generate Mals */
+#meal-planning-button
+{
+    border: none;
+    margin: auto;
+    display: block;
+    color: #FA8BFF;
+    font-weight: bold;
+    padding: 25px 30px;
+    font-size: 2rem;
+    border-radius: 15px;
+    background: #f4f5f8;
+    box-shadow:  5px 5px 9px #eaebee, 
+                 -5px -5px 9px #feffff;
+}
+
+#meal-planning-button:active
+{
+    border: none;
+    margin: auto;
+    display: block;
+    color: #FA8BFF;
+    font-weight: bold;
+    padding: 25px 30px;
+    font-size: 2rem;
+    border-radius: 15px;
+    background: #f4f5f8;
+    box-shadow: inset 5px 5px 9px #eaebee, 
+                inset -5px -5px 9px #feffff;
+}
+
+#meal-planning-div
+{
+    margin-top: 10rem;
+}
+
+#meal-plan-div
+{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#meal-planning-div-img
+{
+    width: 100%;
+}
+
+#meal-planning-img
+{
+    position: absolute;
+    height: 15rem;
+    right: 0;
+}
+
+@media only screen and (min-width: 513px) and (max-width: 768px) {
+    #meal-planning-button
+    {
+        border: none;
+        margin: auto;
+        color: #FA8BFF;
+        font-weight: bold;
+        padding: 20px 25px;
+        font-size: 1rem;
+        border-radius: 10px;
+        background: #f4f5f8;
+        box-shadow:  5px 5px 9px #eaebee, 
+                     -5px -5px 9px #feffff;
+    }
+    
+    #meal-planning-button:active
+    {
+        border: none;
+        margin: auto;
+        color: #FA8BFF;
+        font-weight: bold;
+        padding: 20px 25px;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        background: #f4f5f8;
+        box-shadow: inset 5px 5px 9px #eaebee, 
+                    inset -5px -5px 9px #feffff;
+    }
+    
+    #meal-planning-div
+    {
+        margin-top: 5rem;
+    }
+    
+    #meal-planning-div-img
+    {
+        width: 100%;
+    }
+    
+    #meal-planning-img
+    {
+        position: absolute;
+        height: 10rem;
+        right: 0;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 512px) {
+    #meal-planning-button
+    {
+        border: none;
+        margin: auto;
+        color: #FA8BFF;
+        font-weight: bold;
+        padding: 20px 25px;
+        font-size: 1rem;
+        border-radius: 10px;
+        background: #f4f5f8;
+        box-shadow:  5px 5px 9px #eaebee, 
+                     -5px -5px 9px #feffff;
+    }
+    
+    #meal-planning-button:active
+    {
+        border: none;
+        margin: auto;
+        color: #FA8BFF;
+        font-weight: bold;
+        padding: 20px 25px;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        background: #f4f5f8;
+        box-shadow: inset 5px 5px 9px #eaebee, 
+                    inset -5px -5px 9px #feffff;
+    }
+    
+    #meal-planning-div
+    {
+        margin-top: 5rem;
+    }
+    
+    #meal-planning-div-img
+    {
+        width: 100%;
+    }
+    
+    #meal-planning-img
+    {
+        position: absolute;
+        height: 10rem;
+        right: 0;
+    }
+}
+
+#meal-plan-button
+{
+    border: none;
+    margin: auto;
+    color: #FA8BFF;
+    font-weight: bold;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background: #f4f5f8;
+    box-shadow:  5px 5px 9px #eaebee, 
+                 -5px -5px 9px #feffff;
+}
+
+#meal-plan-button:active
+{
+    border: none;
+    margin: auto;
+    color: #FA8BFF;
+    font-weight: bold;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background: #f4f5f8;
+    box-shadow: inset 5px 5px 9px #eaebee, 
+                inset -5px -5px 9px #feffff;
+}
+
+.meal-title
+{
+    vertical-align: top;
+}
+
+.meal-plan-title
+{
+    color: #2BE3D2;
+    font-size: 1.5rem;
+    vertical-align: top;
+}
+
+.meal-plan-text
+{
+    font-size: 0.7rem;
+    vertical-align: top;
+}
+ 
+#meal-plan-heading h1{
+    font-size: 2rem;
+}
+
+.meal-plan.row
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#meal-total-cal
+{
+    font-family: 'Liu Jian Mao Cao', cursive;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 991px) {
+    .meal-plan-title
+    {
+        font-size: 1rem;
+    }
+
+    .meal-title
+    {
+        font-size: 0.9rem;
+    }
+
+    .meal-plan
+    {
+        width: 120%;
+        margin-left: -5%;
+    }
+
+}
+
+
+/* Footer */
+#footer
+{
+    font-size: 10px;
+    bottom: 0;
+}

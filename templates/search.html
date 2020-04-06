@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Recipes
+{% endblock %}
+
+{% block main %}
+        <div id="recipes-jumbotron" class="jumbotron">
+            <div id="recipes-container" class="container">
+                <!--<div id="recipes-row" class="row row-cols-1 row-cols-md-3">-->
+
+                <div id="search">
+                    <form action="/recipes" method="post">
+                        <div class="form-group">
+                            <input id="recipe-search" name="recipe-search" class="form-control" type="text" placeholder="Search">
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+{% endblock %}

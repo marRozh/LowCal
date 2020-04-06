@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Recipes
+{% endblock %}
+
+{% block main %}
+        <div id="recipes-jumbotron" class="jumbotron">
+            <div id="recipes-container" class="container">
+                
+                    <div id="search">
+                        <h5 id="search-title">Search for recipes by ingredient</h5>
+                        <form action="/recipes" method="post">
+                            <div class="form-group">
+                                <input id="recipe-search" name="recipe-search" class="form-control" type="text" placeholder="Search for an ingredient">
+                            </div>
+                        </form>
+                    </div>
+                    <div id="no-recipe">
+                        <p>{{ message }}</p>
+                    </div>
+                    {% for row in rows %}
+                            <div id="recipes-card" class="card">
+                                <div id="recipes-card-body" class="card-body">
+                                    <h5 id="recipes-card-title" class="card-title">{{ row["name"] }}</h5>
+                                        <p id="calories" class="card-text">Total calories per recipe: {{ row['cal_per_rec'] }}kcal</p>
+                                        <p id="ingredients" class="card-text">{{ row['ingredients'] }}</p>
+                                        <p id="servings" class="card-text">Servings: {{ row['servings'] }}</p>
+                                        <p id="recipes-card-text" class="card-text">{{ row["rec_text"] }}</p>
+                                        <p id="prep" class="card-text">Prep time:{{ row["prep_time"] }}min</p>
+
+                                        <form id="like-recipe" action="/like" method="post">
+                                            <div class="form-group">
+                                                <button name="recipes-like" id="recipes-like" type="submit" class="btn btn-success" value='{{ row["rec_id"] }}'>+</button>
+                                            </div>
+                                        </form>
+                
+                                </div>
+                            </div>
+                    {% endfor %}
+
+            </div>
+        </div>
+
+{% endblock %}

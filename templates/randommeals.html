@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Meal Planning
+{% endblock %}
+
+{% block main %}
+<div id="meal-plan-heading">
+    <h1>Meal Planning</h1>
+</div>
+
+<div id="meal-plan-div">
+    <form id="meal-planning-form" action="/meals" method="post">
+        <button id="meal-plan-button" type="submit" class="btn btn-primary">Generate Random Daily Meal Plan</button>
+    </form>
+</div>
+
+<div class="meal-plan">
+    <div class="row">
+        <div class="col-sm">
+            <h5 class="meal-plan-title">Breakfast</h5>
+        </div>
+        <div class="col-sm-8">
+            <h6 class="meal-title">{{ breakfast_name }}</h6>
+            <p class="meal-plan-text">{{ breakfast_recipe }}</p>
+            <p class="meal-plan-text">{{ breakfast_ingredients }}</p>
+        </div>
+        <div class="col-sm">
+            <p class="meal-plan-text">Calories per serving: {{ breakfast_cal_per_serving }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <h5 class="meal-plan-title">Snack</h5>
+        </div>
+        <div class="col-sm-8">
+            <h6 class="meal-title">{{ snack_one_name }}</h6>
+            <p class="meal-plan-text">{{ snack_one_ingredients }}</p>
+        </div>
+        <div class="col-sm">
+            <p class="meal-plan-text">Calories per serving: {{ snack_one_cal_per_serving }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <h5 class="meal-plan-title">Lunch</h5>
+        </div>
+        <div class="col-sm-8">
+            <h6 class="meal-title">{{ lunch_name }}</h6>
+            <p class="meal-plan-text">{{ lunch_recipe }}</p>
+            <p class="meal-plan-text">{{ lunch_ingredients }}</p>
+        </div>
+        <div class="col-sm">
+            <p class="meal-plan-text">Calories per serving: {{ lunch_cal_per_serving }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <h5 class="meal-plan-title">Snack</h5>
+        </div>
+        <div class="col-sm-8">
+            <h6 class="meal-title">{{ snack_two_name }}</h6>
+            <p class="meal-plan-text">{{ snack_two_ingredients }}</p>
+        </div>
+        <div class="col-sm">
+            <p class="meal-plan-text">Calories per serving: {{ snack_two_cal_per_serving }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <h5 class="meal-plan-title">Dinner</h5>
+        </div>
+        <div class="col-sm-8">
+            <h6 class="meal-title">{{ dinner_name }}</h6>
+            <p class="meal-plan-text">{{ dinner_recipe }}</p>
+            <p class="meal-plan-text">{{ dinner_ingredients }}</p>
+        </div>
+        <div class="col-sm">
+            <p class="meal-plan-text">Calories per serving: {{ dinner_cal_per_serving }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <h5 class="meal-plan-title">Snack</h5>
+        </div>
+        <div class="col-sm-8">
+            <h6 class="meal-title">{{ snack_three_name }}</h6>
+            <p class="meal-plan-text">{{ snack_three_ingredients }}</p>
+        </div>
+        <div class="col-sm">
+            <p class="meal-plan-text">Calories per serving: {{ snack_three_cal_per_serving }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <h5 id="meal-total-cal">Total calories for the day: {{ total_cals_per_day }}</h5>
+    </div>
+</div>
+
+
+{% endblock %}
