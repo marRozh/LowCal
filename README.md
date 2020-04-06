@@ -4,6 +4,7 @@ LowCal Recipes is a website to keep track of your own low calorie recipes and cr
 
 <ul>
 <li>Home - Save recipes to your home page, and access by selecting which meal type recipe you would like to get</li>
+    ![Home Page](https://github.com/marRozh/LowCal/blob/master/static/website%20imgs/add.png)
 <li>Recipes - you can search for recipes in the database, by searching for an ingredient and add them to your home page</li>
 <li>Meal Planner - generate daily random meal plan, that shows recipes, calories per meal and calories for the day</li>
 <li>Add A Recipe - you can add your own recipe, that will add to your home page and overall database</li>
